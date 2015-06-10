@@ -4,7 +4,6 @@
 [![License](https://img.shields.io/cocoapods/l/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
 [![Platform](https://img.shields.io/cocoapods/p/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
 
-# DNFlyingBadges
 #### version 0.1 (beta)
 _This is still beta quality code - feel free to test, create issues, etc. The library doesn't use any private APIs - apps using it should be fine for release on the App Store._
 
