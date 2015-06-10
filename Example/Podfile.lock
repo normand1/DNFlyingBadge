@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DNFlyingBadges: c93da4ea6c0be1af7fbf870f73d01e7d52711b74
+  DNFlyingBadges: 5db28e573df076f368a7e9c5191b0d12a36834fd
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
   Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
   Nimble-Snapshots: 216ae8c0ea3f4105be1606749fe15d8b2138af40

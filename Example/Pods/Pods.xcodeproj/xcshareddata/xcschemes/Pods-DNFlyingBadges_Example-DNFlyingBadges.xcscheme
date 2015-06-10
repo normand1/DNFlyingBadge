@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40E392F4C33AD80B8B85E38C"
+               BlueprintIdentifier = "14DCAA3904F54A9AFC910455"
                BuildableName = "DNFlyingBadges.framework"
                BlueprintName = "Pods-DNFlyingBadges_Example-DNFlyingBadges"
                ReferencedContainer = "container:Pods.xcodeproj">
