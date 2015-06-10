@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0520F7FACBDC43FEF8C60AC4 /* Pods_DNFlyingBadges_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11A1F6627D96F9D965E9BD7 /* Pods_DNFlyingBadges_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4A3DD3A31B28BEC700324569 /* DNFlyingBadgesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3DD3A21B28BEC700324569 /* DNFlyingBadgesViewTests.swift */; };
+		4A562CCF1B28AAE000CE5734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CCB1B28AAE000CE5734 /* ViewController.swift */; };
+		4A562CD01B28AAE000CE5734 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CCC1B28AAE000CE5734 /* TableViewController.swift */; };
+		4A562CD11B28AAE000CE5734 /* ImageLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CCD1B28AAE000CE5734 /* ImageLoadingViewController.swift */; };
+		4A562CD21B28AAE000CE5734 /* FeelingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CCE1B28AAE000CE5734 /* FeelingsViewController.swift */; };
+		4A562CD61B28B74000CE5734 /* DNFlyingBadgesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CD51B28B74000CE5734 /* DNFlyingBadgesTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F62F7CB0D0E060E06B28FDFD /* Pods_DNFlyingBadges_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92183D19DDDCB1A5A244E7 /* Pods_DNFlyingBadges_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,16 +35,20 @@
 		0E2F8808CAB9B496987EF3C5 /* DNFlyingBadges.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DNFlyingBadges.podspec; path = ../DNFlyingBadges.podspec; sourceTree = "<group>"; };
 		1576FA7048C2D45BC70E08F5 /* Pods-DNFlyingBadges_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNFlyingBadges_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNFlyingBadges_Tests/Pods-DNFlyingBadges_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1BEFF8FDDA02074E4E6F7871 /* Pods-DNFlyingBadges_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNFlyingBadges_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNFlyingBadges_Example/Pods-DNFlyingBadges_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4A3DD3A21B28BEC700324569 /* DNFlyingBadgesViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNFlyingBadgesViewTests.swift; sourceTree = "<group>"; };
+		4A562CCB1B28AAE000CE5734 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A562CCC1B28AAE000CE5734 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4A562CCD1B28AAE000CE5734 /* ImageLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewController.swift; sourceTree = "<group>"; };
+		4A562CCE1B28AAE000CE5734 /* FeelingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingsViewController.swift; sourceTree = "<group>"; };
+		4A562CD51B28B74000CE5734 /* DNFlyingBadgesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNFlyingBadgesTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DNFlyingBadges_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNFlyingBadges_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = DNFlyingBadges_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* DNFlyingBadges_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNFlyingBadges_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		673A629437BE6807676775B6 /* Pods-DNFlyingBadges_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNFlyingBadges_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNFlyingBadges_Example/Pods-DNFlyingBadges_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6D224443531ED19DAD202041 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7B92183D19DDDCB1A5A244E7 /* Pods_DNFlyingBadges_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNFlyingBadges_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* DNFlyingBadges_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* DNFlyingBadges_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				4A562CCB1B28AAE000CE5734 /* ViewController.swift */,
+				4A562CCC1B28AAE000CE5734 /* TableViewController.swift */,
+				4A562CCD1B28AAE000CE5734 /* ImageLoadingViewController.swift */,
+				4A562CCE1B28AAE000CE5734 /* FeelingsViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -115,7 +126,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				4A562CD51B28B74000CE5734 /* DNFlyingBadgesTests.swift */,
+				4A3DD3A21B28BEC700324569 /* DNFlyingBadgesViewTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -200,7 +212,7 @@
 			);
 			name = DNFlyingBadges_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* DNFlyingBadges_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,6 +221,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -358,7 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				4A562CD21B28AAE000CE5734 /* FeelingsViewController.swift in Sources */,
+				4A562CCF1B28AAE000CE5734 /* ViewController.swift in Sources */,
+				4A562CD01B28AAE000CE5734 /* TableViewController.swift in Sources */,
+				4A562CD11B28AAE000CE5734 /* ImageLoadingViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				4A562CD61B28B74000CE5734 /* DNFlyingBadgesTests.swift in Sources */,
+				4A3DD3A31B28BEC700324569 /* DNFlyingBadgesViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +504,7 @@
 			baseConfigurationReference = 1BEFF8FDDA02074E4E6F7871 /* Pods-DNFlyingBadges_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = DNFlyingBadges/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -499,6 +517,7 @@
 			baseConfigurationReference = 673A629437BE6807676775B6 /* Pods-DNFlyingBadges_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = DNFlyingBadges/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

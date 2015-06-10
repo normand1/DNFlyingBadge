@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Pods-DNFlyingBadges_Tests-DNFlyingBadges-DNFlyingBadges-Bridging-Header.h

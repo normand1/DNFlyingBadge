@@ -1,0 +1,6 @@
+framework module DNFlyingBadges {
+  umbrella header "Pods-DNFlyingBadges_Example-DNFlyingBadges-umbrella.h"
+
+  export *
+  module * { export * }
+}

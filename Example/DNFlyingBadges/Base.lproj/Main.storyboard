@@ -1,25 +1,230 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B4d-iM-9yx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Loading Indicator-->
+        <scene sceneID="khk-0U-piI">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Loading Indicator" id="0fW-Ke-qBt" customClass="ImageLoadingViewController" customModule="FlyingBadgesTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="or9-M3-7dv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z1w-g0-d6P"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="xYp-D8-Go7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Sh-Jg-BaH">
+                                <rect key="frame" x="0.0" y="371" width="600" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="a8Z-Bm-3kA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ed-ky-nmG">
+                                <rect key="frame" x="36" y="113" width="528" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="fGx-Mb-bYD"/>
+                                </constraints>
+                                <string key="text">Hey, there is a pretty big image loading below, but That's no reason to block the entire view with a loading indicator. Use a Flying Badge to indicate only a portion of the view is loading</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1ed-ky-nmG" firstAttribute="leading" secondItem="xYp-D8-Go7" secondAttribute="leadingMargin" constant="20" id="8z3-wZ-bX9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1ed-ky-nmG" secondAttribute="trailing" constant="20" id="GZs-kI-MNL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Sh-Jg-BaH" secondAttribute="trailing" constant="-16" id="JCO-fA-44c"/>
+                            <constraint firstItem="Z1w-g0-d6P" firstAttribute="top" secondItem="6Sh-Jg-BaH" secondAttribute="bottom" constant="-49" id="WqK-e6-KQd"/>
+                            <constraint firstItem="6Sh-Jg-BaH" firstAttribute="leading" secondItem="xYp-D8-Go7" secondAttribute="leadingMargin" constant="-16" id="efM-mP-GoQ"/>
+                            <constraint firstItem="6Sh-Jg-BaH" firstAttribute="top" secondItem="1ed-ky-nmG" secondAttribute="bottom" constant="81" id="sLu-dZ-Y1k"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Loading Inidicator" id="0Mi-bu-epN"/>
+                    <connections>
+                        <outlet property="imageView" destination="6Sh-Jg-BaH" id="LfC-Ij-Gi2"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOa-wD-HR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1078" y="-1056"/>
+        </scene>
+        <!--Fixed Position-->
+        <scene sceneID="sI7-5Q-EmC">
+            <objects>
+                <viewController title="Fixed Position" id="FPl-WR-Q93" customClass="FeelingsViewController" customModule="FlyingBadgesTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JHb-Hn-5tq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ts0-2l-dmY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ic-JO-To9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMN-V0-4jN">
+                                <rect key="frame" x="380" y="285" width="39" height="30"/>
+                                <state key="normal" title="Good">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goodAction:" destination="FPl-WR-Q93" eventType="touchUpInside" id="hce-5B-qpp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75F-4I-c9h">
+                                <rect key="frame" x="185" y="285" width="30" height="30"/>
+                                <state key="normal" title="Evil">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="evilAction:" destination="FPl-WR-Q93" eventType="touchUpInside" id="9MQ-Ox-ikw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn5-3G-Ds8">
+                                <rect key="frame" x="219" y="190" width="161.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWb-e2-6xG">
+                                <rect key="frame" x="297" y="130" width="5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="xWb-e2-6xG" secondAttribute="centerX" id="3W1-Eq-oeO"/>
+                            <constraint firstAttribute="centerY" secondItem="75F-4I-c9h" secondAttribute="centerY" id="AeN-OX-F4V"/>
+                            <constraint firstAttribute="centerY" secondItem="xWb-e2-6xG" secondAttribute="centerY" constant="160" id="GiU-52-h3F"/>
+                            <constraint firstAttribute="centerX" secondItem="UMN-V0-4jN" secondAttribute="centerX" constant="-100" id="Ohk-KT-kW7"/>
+                            <constraint firstAttribute="centerX" secondItem="75F-4I-c9h" secondAttribute="centerX" constant="100" id="SR6-az-cd2"/>
+                            <constraint firstAttribute="centerY" secondItem="jn5-3G-Ds8" secondAttribute="centerY" constant="100" id="TfC-tp-CYA"/>
+                            <constraint firstAttribute="centerX" secondItem="jn5-3G-Ds8" secondAttribute="centerX" id="e0v-fA-5fx"/>
+                            <constraint firstAttribute="centerY" secondItem="UMN-V0-4jN" secondAttribute="centerY" id="xmH-X5-IYW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fixed Position" id="fCi-hr-2Bd"/>
+                    <connections>
+                        <outlet property="targetLabel" destination="xWb-e2-6xG" id="GAX-9c-D8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39r-82-spW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="-349"/>
+        </scene>
+        <!--Any Point-->
+        <scene sceneID="4Ek-sx-4GO">
+            <objects>
+                <viewController title="Any Point" id="qgm-wA-ZPD" customClass="ViewController" customModule="FlyingBadgesTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T6Z-El-fDh"/>
+                        <viewControllerLayoutGuide type="bottom" id="xQd-OY-8Ou"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YDP-Xv-URX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Anywhere!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-pY-Jud">
+                                <rect key="frame" x="244.5" y="289.5" width="112.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="5fY-pY-Jud" secondAttribute="centerY" id="LIr-kP-7S7"/>
+                            <constraint firstAttribute="centerX" secondItem="5fY-pY-Jud" secondAttribute="centerX" id="ws5-1j-8cQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Any Point" id="mgr-6V-Jdc"/>
+                    <connections>
+                        <outlet property="centerLabel" destination="5fY-pY-Jud" id="3an-G8-Q5z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSY-aY-Pgg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="373"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TOU-4Q-k7l">
+            <objects>
+                <tableViewController id="GkN-hw-bGf" customClass="TableViewController" customModule="FlyingBadgesTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f0O-Y3-2p8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="NlZ-XQ-YF2" style="IBUITableViewCellStyleDefault" id="qr8-2t-Gmh">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qr8-2t-Gmh" id="zeg-Jk-vAy">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NlZ-XQ-YF2">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GkN-hw-bGf" id="zzh-sK-7nY"/>
+                            <outlet property="delegate" destination="GkN-hw-bGf" id="6oP-AE-RMD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="sXS-Vn-Lji"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVK-Ve-94r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="1121"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uZo-ih-mmh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="B4d-iM-9yx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gqI-QA-UXu">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qgm-wA-ZPD" kind="relationship" relationship="viewControllers" id="ghU-ad-j6I"/>
+                        <segue destination="VaJ-Lt-RnA" kind="relationship" relationship="viewControllers" id="sjj-nd-7Ze"/>
+                        <segue destination="FPl-WR-Q93" kind="relationship" relationship="viewControllers" id="24Q-ah-BkJ"/>
+                        <segue destination="0fW-Ke-qBt" kind="relationship" relationship="viewControllers" id="oIL-3G-5Ed"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcA-8n-lG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="373"/>
+        </scene>
+        <!--Table Example-->
+        <scene sceneID="Os2-dV-yK4">
+            <objects>
+                <navigationController title="Table Example" automaticallyAdjustsScrollViewInsets="NO" id="VaJ-Lt-RnA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Table Example" id="H1l-PU-XbJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Ug-fj-Pqk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GkN-hw-bGf" kind="relationship" relationship="rootViewController" id="wYC-Z2-oap"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6f6-0s-9Ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="1121"/>
         </scene>
     </scenes>
 </document>
