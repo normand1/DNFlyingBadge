@@ -1,6 +1,6 @@
 # DNFlyingBadges
 
-[![CI Status](http://img.shields.io/travis/David Norman/DNFlyingBadges.svg?style=flat)](https://travis-ci.org/David Norman/DNFlyingBadges)
+[![CI Status](http://img.shields.io/travis/David Norman/DNFlyingBadge.svg?style=flat)](https://travis-ci.org/David Norman/DNFlyingBadges)
 [![Version](https://img.shields.io/cocoapods/v/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
 [![License](https://img.shields.io/cocoapods/l/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
 [![Platform](https://img.shields.io/cocoapods/p/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
