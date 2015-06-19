@@ -1,9 +1,11 @@
 # DNFlyingBadges
 
-[![CI Status](http://img.shields.io/travis/David Norman/DNFlyingBadges.svg?style=flat)](https://travis-ci.org/David Norman/DNFlyingBadges)
 [![Version](https://img.shields.io/cocoapods/v/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
 [![License](https://img.shields.io/cocoapods/l/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
 [![Platform](https://img.shields.io/cocoapods/p/DNFlyingBadges.svg?style=flat)](http://cocoapods.org/pods/DNFlyingBadges)
+
+#### version 0.1 (beta)
+_This is still beta quality code - feel free to test, create issues, etc. The library doesn't use any private APIs - apps using it should be fine for release on the App Store._
 
 ## Usage
 
@@ -19,18 +21,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "DNFlyingBadges"
 ```
-
-## Author
-
-David Norman, david.norman.w@gmail.com
-
-## License
-
-DNFlyingBadges is available under the MIT license. See the LICENSE file for more info.
-
-# DNFlyingBadges
-#### version 0.1 (beta)
-_This is still beta quality code - feel free to test, create issues, etc. The library doesn't use any private APIs - apps using it should be fine for release on the App Store._
 
 <a name="intro"></a>
 Intro
@@ -90,3 +80,6 @@ Includes [JNWSpringAnimation](https://github.com/jwilling/JNWSpringAnimation) by
 
 Includes free icons from: [icomoon](https://icomoon.io/#home)
 
+## License
+
+DNFlyingBadges is available under the MIT license. See the LICENSE file for more info.
