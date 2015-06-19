@@ -14,11 +14,11 @@
 		4A562CD11B28AAE000CE5734 /* ImageLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CCD1B28AAE000CE5734 /* ImageLoadingViewController.swift */; };
 		4A562CD21B28AAE000CE5734 /* FeelingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CCE1B28AAE000CE5734 /* FeelingsViewController.swift */; };
 		4A562CD61B28B74000CE5734 /* DNFlyingBadgesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A562CD51B28B74000CE5734 /* DNFlyingBadgesTests.swift */; };
+		4AD713C01B28F30900201ACC /* Pods_DNFlyingBadges_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92183D19DDDCB1A5A244E7 /* Pods_DNFlyingBadges_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		F62F7CB0D0E060E06B28FDFD /* Pods_DNFlyingBadges_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B92183D19DDDCB1A5A244E7 /* Pods_DNFlyingBadges_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62F7CB0D0E060E06B28FDFD /* Pods_DNFlyingBadges_Example.framework in Frameworks */,
+				4AD713C01B28F30900201ACC /* Pods_DNFlyingBadges_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for DNFlyingBadges */,
+				607FACD21AFB9204008FA782 /* Example */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				D50B8550687C4BFE4BE36AD5 /* Pods */,
@@ -98,7 +98,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for DNFlyingBadges */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -111,7 +111,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for DNFlyingBadges";
+			name = Example;
 			path = DNFlyingBadges;
 			sourceTree = "<group>";
 		};

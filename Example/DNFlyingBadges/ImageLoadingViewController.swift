@@ -55,7 +55,7 @@ class ImageLoadingViewController: UIViewController {
         /* Create session, and optionally set a NSURLSessionDelegate. */
         let session = NSURLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
         
-        var URL = NSURL(string: "https://c1.staticflickr.com/5/4094/4744926480_39866c6308_b.jpg")
+        var URL = NSURL(string: "https://upload.wikimedia.org/wikipedia/commons/0/06/Yosemite_USA.JPG")
         let request = NSMutableURLRequest(URL: URL!)
         request.HTTPMethod = "GET"
         

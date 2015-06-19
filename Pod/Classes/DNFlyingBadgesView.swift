@@ -78,12 +78,14 @@ public class DNFlyingBadgesView: UIView {
             mainImage = defaultImage
         } else {
             if let userImageName = defaultImageName {
-                var path = NSBundle(forClass: self.dynamicType).pathForResource(userImageName.rawValue, ofType: ".png")
+                var bundle = NSBundle(forClass: self.dynamicType)
+                var path = bundle.pathForResource("DNFlyingBadges.bundle/\(userImageName.rawValue)", ofType: ".png")
                 var data = NSData(contentsOfFile: path!)
                 mainImage = UIImage(contentsOfFile: path!)
                 
             } else {
-                var path = NSBundle(forClass: self.dynamicType).pathForResource("like", ofType: ".png")
+                var bundle = NSBundle(forClass: self.dynamicType)
+                var path = bundle.pathForResource("DNFlyingBadges.bundle/like", ofType: ".png")
                 var data = NSData(contentsOfFile: path!)
                 mainImage = UIImage(contentsOfFile: path!)
                 
